@@ -12,14 +12,19 @@ package pp.pkg5.pkg6;
 public class Box 
 {
     // Data fields arrtibutes of instance type Box
-    boolean full; 
-    double hieght; 
-    double width; 
-    double depth; 
+    
+    
+    private boolean full; 
+    private double hieght; 
+    private double width; 
+    private double depth; 
+    // Amount of instances of Box available
+    private static int count; // allocate in static memory initalizes to 0 and life-expentacy is end of program
     
     // 3 arg constructor initalizes our data memebers 
     Box(double hieght, double width, double depth)
     {
+        ++count; 
         this.hieght = hieght; 
         this.width = width; 
         this.depth = depth; 
@@ -32,6 +37,7 @@ public class Box
     double getWdith(){ return width; }
     double getDepth(){ return depth; }
     boolean getFull(){return full;}
+    int getCount(){return count;} 
     // Declare and define our mutators
     
     void setHieght(double hieght){ this.hieght = hieght; }

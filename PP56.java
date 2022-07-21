@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pp.pkg5.pkg6;
-
+import java.util.Scanner; // Get our scanner class
 //Design and implement a class called Box that contains instance
 //data that represents the height, width, and depth of the box. Also
 //include a boolean variable called full as instance data that represents 
@@ -22,10 +22,15 @@ public class PP56 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Box A = new Box(1,2,3); 
-       A.setFull(true); 
-       System.out.println(A); 
-       
+       Box A = new Box(1,2,3);
+              Box B = new Box(1,2,3);
+       Box C = new Box(1,2,3);
+       Box D = new Box(1,2,3);
+       Box E = new Box(1,2,3);
+
+       System.out.println(A.getCount()); 
+        
     }
+
     
 }
