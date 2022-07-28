@@ -16,14 +16,15 @@ public class Algo {
      */
     public static void main(String[] args) {
         
-        TVShow[] shows = {new TVShow("F"), new TVShow("B"), new TVShow("D"),
-            new TVShow("A"), new TVShow("E"),new TVShow("Z")};
+        TVShow[] shows = {new TVShow("F",TVShow.Days.Monday), new TVShow("B",TVShow.Days.Friday),
+            new TVShow("D",TVShow.Days.Saturday),
+            new TVShow("A",TVShow.Days.Sunday), new TVShow("E",TVShow.Days.Thursday),new TVShow("Z",TVShow.Days.Tuesday)};
         
         MergeAlgo.mergeSort(shows, 0, shows.length-1);
        
         for(int i =0; i < shows.length; ++i)
         {
-            System.out.print(shows[i]  + " "); 
+            System.out.print(shows[i]+ " "); 
         }
         
     }
